@@ -1,0 +1,18 @@
+<div class="container">
+
+  <h1>Dat' Cocktail !</h1>
+
+  <div class="cocktail">
+    <h2><%= @cocktail.name %></h2>
+  </div>
+
+  <%=  render 'list_doses'%>
+
+  <div>
+  <%= link_to "back to list", root_path, class: "btn  btn-primary btn-show pull-right"%>
+  </div>
+
+  <div>
+      <%= link_to "Set a new dose", new_cocktail_dose_path(@cocktail), class: "btn  btn-success btn-show "%>
+  </div>
+</div>

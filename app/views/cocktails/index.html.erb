@@ -1,0 +1,19 @@
+
+<div class="container">
+
+  <h1>Cocktails paradise</h1>
+
+  <div class="ctn">
+      <%= render 'btn_new'  %>
+  </div>
+
+  <ul class="cocktails-list">
+    <% @cocktails.each do |cocktail| %>
+      <li>
+          <%= link_to "#{cocktail.id} | #{cocktail.name}", cocktail_path(cocktail) %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>
+
